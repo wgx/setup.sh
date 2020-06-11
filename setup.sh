@@ -124,9 +124,6 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 #redude transparency
 defaults write com.apple.universalaccess reduceTransparency -bool true
 
-#terminal focus follows mouse
-defaults write com.apple.Terminal FocusFollowsMouse -string YES
-
 #textedit defaults to plaintext
 defaults write com.apple.TextEdit RichText -int 0
 
@@ -153,7 +150,3 @@ for app in "Activity Monitor" \
 	"iCal"; do
 	killall "${app}" &> /dev/null
 done
-
-
-
-
